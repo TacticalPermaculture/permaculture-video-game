@@ -1,0 +1,1873 @@
+
+
+/* containers */
+
+
+.sketchPen{
+    
+   background-image: url('../images/design-elements/sketch.png');
+   height:20px;
+   width:20px;
+
+}
+
+.sketchOff{
+   background-image: url('../images/design-elements/soil.png');
+
+}
+
+
+.gridBackground{
+ 
+color:#000000;
+
+}
+
+.float-child_Supplier{
+    background: linear-gradient(to left,#2c2c2c,#585757,#2c2c2c);
+    text-align: center;
+    position: absolute;
+    right: 2px; 
+    color:rgb(0, 0, 0);
+    margin-top: 4px;
+    border-color: #3b3b3b;
+    border-width: 10px;
+    border-style:inset;
+    height:840px; 
+    overflow-y: scroll;
+    
+}
+
+.float-container{
+    float: right;
+    margin-left: 15px;
+    width: 100%;
+    height: 100%;
+    border: 4px dashed;
+    border-color: #6e431a;
+    height:840px; 
+    position: absolute;
+    z-index: -1;
+    background: url('../images/design-elements/soil.png');
+
+    
+  
+}
+
+.outer-container {
+   position: relative;
+   max-width: 90%;
+   z-index: 1;
+
+}
+
+
+.table .column{
+    width: 20px;
+    float: left;
+    
+
+}
+  
+.table .column.first{
+
+    clear: left;
+}
+  
+.box {
+    width: 20px;
+    height: 20px;
+
+    
+}
+
+
+/* cursors */
+
+
+.currentGridUnit{
+   opacity: .5;
+   
+}
+
+.driveEast{
+   cursor: url('../images/design-elements/truck_right.png'), auto; 
+
+}
+
+.driveNorth{
+   cursor: url('../images/design-elements/truck_up.png'), auto; 
+
+
+}
+
+.driveSouth{
+   cursor: url('../images/design-elements/truck_down.png'), auto; 
+
+}
+
+.driveWest{
+   cursor: url('../images/design-elements/truck_left.png'), auto; 
+
+}
+
+.stopSign{
+   cursor: url('../images/design-elements/stop_sign.png'), auto; 
+      
+   }
+
+
+.gameOver{
+   cursor: none;
+  
+}
+
+.gameOverBannerOn{
+
+   position: fixed;
+   display:block;
+   left: 30%;
+   top: 20%; 
+
+}
+
+.displayNone{
+
+   display:none;
+
+}
+
+
+/* dashboard panels */
+
+.dashboard-container {
+position:relative;
+background-color: rgb(22, 22, 22);
+ 
+}
+
+.totalMaterialsCostDashText {
+   position: absolute;
+   bottom: 345px;
+   right: 80px;
+   color: rgb(102, 199, 89);
+   padding-top: 550px;
+   padding-left: 20px;
+
+ }
+
+.totalHoursDrivenDashText {
+   position: absolute;
+   bottom: 280px;
+   right: 160px;
+   color: rgb(102, 199, 89);
+   padding-top: 500px;
+   padding-left: 20px;
+
+ }
+ 
+.totalHoursDrivenCostDashText {
+   position: absolute;
+   bottom: 280px;
+   right: 45px;
+   color: rgb(102, 199, 89);
+   padding-top: 500px;
+   padding-left: 20px;
+
+ }
+ 
+.totalLaborHoursDashText {
+   position: absolute;
+   bottom: 216px;
+   right: 160px;
+   color: rgb(102, 199, 89);
+   padding-top: 500px;
+   padding-left: 20px;
+
+ }
+ 
+ 
+.totalLaborCostDashText {
+   position: absolute;
+   bottom: 216px;
+   right: 45px;
+   color: rgb(102, 199, 89);
+   padding-top: 500px;
+   padding-left: 20px;
+
+ }
+ 
+
+ .dashPanelMilesText {
+   position: absolute;
+   bottom: 153px;
+   right: 170px;
+   color: rgb(102, 199, 89);
+   padding-top: 500px;
+   padding-left: 20px;
+
+ }
+ 
+ 
+ .dashPanelFuelCostText {
+   position: absolute;
+   bottom: 153px;
+   right: 95px;
+   color: rgb(102, 199, 89);
+   padding-top: 500px;
+   padding-left: 20px;
+
+ }
+ 
+ .dashPanelFuelGaugeText {
+   position: absolute;
+   bottom: 153px;
+   right: 20px;
+   color: rgb(102, 199, 89);
+   padding-top: 500px;
+   padding-left: 20px;
+
+ }
+ 
+
+ .budgetDashText {
+   position: absolute;
+   bottom: 87px;
+   right: 60px;
+   color: rgb(102, 199, 89);
+   padding-left: 20px;
+   padding-right: 70px;
+ }
+ 
+ .totalCostDashText {
+   position: absolute;
+   bottom: 87px;
+   right: 0px;
+   color: rgb(102, 199, 89);
+   padding-left: 900px;
+   padding-right: 40px;
+ }
+
+ /* total Truck Load Percent Display */
+
+ .totalTruckLoadPercentDisplay{
+
+   color: rgb(102, 199, 89);
+   position: absolute;
+   bottom: 16px;
+   right: 100px;
+   color: rgb(102, 199, 89);
+   padding-top: 500px;
+   padding-left: 20px;
+
+}
+
+.yellowWarning {
+   color: yellow;
+}
+
+.redWarning {
+   color: red;
+
+}
+
+
+
+
+
+/* element menu */
+
+* {
+    box-sizing: border-box;
+  }
+
+
+
+
+  .elementMenuB {
+   background-color: #6e431a;
+    display: none;
+    position: "";
+    left: "";
+    top: "";
+    border: 3px dashed #6e431a;
+    z-index: 9;
+    cursor: pointer;
+
+  }
+
+
+.elementMenuC {
+
+height: 300px;
+width: 266px;
+overflow: scroll;
+color: black;
+cursor: pointer;
+
+}
+
+  .elementMenuContainer {
+    height: 300px;
+    width:  266px;
+    overflow: scroll;
+    background-color: rgb(70, 85, 4);
+    color: black;
+    cursor: pointer;
+    
+   }
+
+  
+  
+.elementMenuInstructions{
+
+color: white;
+padding: 10px;
+cursor: pointer;
+font-size: small;
+}
+
+
+.elementMenuCloseButton{
+
+       float: left;
+       padding:5px;
+       cursor: pointer;
+}
+
+
+/* element menu icon */
+
+.menuElementIcon{
+    
+   border: 5px solid; 
+   
+   border-color: #000000; 
+   
+   border-style: groove;}
+
+
+/* menu element selected on hover */
+
+.menuElementHover {
+
+   background-color: #000000;
+   opacity: .75;
+   }
+
+
+
+/* menu element selected on click */
+
+.menuElementSelected {
+   background-color: #000000;
+   opacity: .4;
+   }
+
+
+
+/* menu selectors */
+
+
+.bambooHMenuSelector {
+   display:none;
+   background: linear-gradient(#888626, #c7e710);
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 6px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+   
+}
+  
+.bambooVMenuSelector {
+   display:none;
+   background: linear-gradient(#a87d05, orange);
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+
+}
+
+.cardboardMenuSelector {
+   display:none;
+   background: linear-gradient(#8d6c12, rgb(226, 167, 112));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+
+}
+
+.compostMenuSelector {
+   display:none;
+   background: linear-gradient(#80600a, rgb(148, 116, 78));   
+   font-weight: bolder;
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+
+.compostingToiletMenuSelector {
+   display:none;
+   background: linear-gradient(#bea515, rgb(233, 230, 65));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+
+}
+
+
+.earthBagWallMenuSelector {
+   display:none;
+   background: linear-gradient(rgb(104, 84, 59),rgb(153, 124, 87));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+
+}
+
+.firePitMenuSelector {
+   display:none;
+   background: linear-gradient(rgb(180, 89, 14), rgb(253, 124, 19));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+
+}
+
+.foodStorageContainersMenuSelector {
+   display:none;
+   background: linear-gradient(rgb(77, 77, 77),rgb(126, 126, 126));   
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+
+}
+
+.greenHouseMenuSelector {
+   display:none;
+   background: linear-gradient(rgb(63, 119, 88),rgb(109, 207, 153));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+
+}
+
+.gravelMenuSelector {
+   display:none;
+   background: linear-gradient(rgb(70, 69, 69),rgb(105, 105, 105));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+
+}
+
+.groundCoverMenuSelector {
+   display:none;
+   background: linear-gradient(rgb(39, 117, 39),rgb(65, 194, 65));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+     
+}
+
+.herbsMenuSelector {
+   display:none;
+   background: linear-gradient(rgba(37, 99, 40, 0.452),rgba(60, 158, 65, 0.452));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+
+.honeyBeeHiveMenuSelector {
+   display:none;
+   background: linear-gradient(rgba(158, 156, 10, 0.452),rgba(236, 247, 82, 0.966));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+
+}
+
+.livingBarbedWireMenuSelector {
+   display:none;
+   background: linear-gradient(rgb(173, 24, 24),rgb(240, 33, 33));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   
+}
+
+.medTentMenuSelector {
+   display:none;
+   background: linear-gradient(rgb(177, 1, 1),red);
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+
+}
+   
+.mulchMenuSelector {
+   display:none;
+   background: linear-gradient(rgb(95, 52, 11),rgb(173, 93, 18));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+
+.pipeHMenuSelector {
+   display:none;
+   background: linear-gradient(rgb(56, 56, 56),rgb(143, 141, 141));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+ 
+}
+
+
+.pipeVMenuSelector {
+   display:none;
+   background: linear-gradient(rgb(56, 56, 56),rgb(143, 141, 141));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+
+.pondSealantMenuSelector {
+   display:none;
+   background: linear-gradient(rgb(17, 90, 90),rgb(30, 161, 161));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+
+  
+.poultryMenuSelector {
+   display:none;
+   background: linear-gradient(rgba(116, 114, 6, 0.897),rgba(214, 211, 10, 0.897));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+
+.rootCropsMenuSelector {
+   display:none;
+   background: linear-gradient(rgba(129, 67, 9, 0.897),rgba(231, 119, 14, 0.897));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+}
+
+.sheetMetalMenuSelector {
+   display:none;
+   background: linear-gradient(rgba(107, 106, 105, 0.897),rgba(107, 106, 105, 0.897));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+   
+.shortTreeMenuSelector {
+   display:none;
+   background: linear-gradient(rgba(4, 46, 9, 0.897),rgba(9, 105, 22, 0.897));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+   
+.shrubsMenuSelector {
+   display:none;
+   background: linear-gradient(rgba(36, 77, 41, 0.897),rgba(70, 150, 81, 0.897));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+   
+.solarPanelsMenuSelector {
+   display:none;
+   background: linear-gradient(rgb(82, 82, 82),rgb(158, 158, 158));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+
+.stoneMenuSelector {
+   display:none;
+   background: linear-gradient(rgba(68, 66, 66, 0.932),rgba(143, 139, 139, 0.932));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+    padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a; 
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+
+.strawBaleMenuSelector {
+   display:none;
+   background: linear-gradient(rgba(104, 107, 63, 0.932),rgba(192, 197, 116, 0.932));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+
+}
+
+.swaleEWMenuSelector {
+   background: linear-gradient(rgb(12, 78, 109),rgb(18, 124, 173));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+
+.swaleNSMenuSelector {
+   background: linear-gradient(rgb(12, 78, 109),rgb(18, 124, 173));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+       cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+  
+.tallTreeMenuSelector {
+   display:none;
+   background: linear-gradient(rgb(2, 65, 21),rgb(4, 119, 38));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+
+.tanksMenuSelector {
+   display:none;
+   background: linear-gradient(rgb(10, 75, 105),rgb(18, 124, 173));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+
+.vinesMenuSelector {   
+   display:none;
+   background: linear-gradient(rgb(5, 75, 46),rgb(10, 143, 87));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+
+
+.wireFencingMenuSelector {
+   display:none;
+   background: linear-gradient(rgb(115, 116, 116),rgb(183, 184, 184));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+   cursor: url('../images/design-elements/wheel_barrow.png'), auto; 
+
+}
+
+.woodCoreBermMenuSelector {
+   display:none;
+   background: linear-gradient(rgba(146, 126, 12, 0.418),rgba(243, 212, 36, 0.418));
+   font-weight: bolder; 
+   text-align: right;
+   font-size: large;
+   position: left;
+   width: 250px;
+   padding-top: 6px;
+   padding-right: 20px;
+   border: 2px dashed;
+   border-color: #6e431a;
+   margin-bottom: 5px;
+
+}
+
+.displayElementMenuItem{
+   display: block;
+
+}
+
+.elementSupplyDepleted{
+   text-decoration: line-through;
+   color: rgb(46, 2, 2)
+
+}
+
+
+/* tiles */
+
+.noTl{
+
+   color:#b68d1d
+
+}
+
+.bambooHTile {
+   background-image: url('../images/design-elements/horizontal_bamboo.png');
+
+}
+ 
+.bambooVTile {
+   background-image: url('../images/design-elements/vertical_bamboo.png');
+ 
+}
+
+.cardboardTile{
+   background-image: url('../images/design-elements/cardboard.png');
+
+}
+
+.compostTile {
+
+   background-image: url('../images/design-elements/compost.png');
+   
+}
+
+.compostingToiletTile{
+   background-image: url('../images/design-elements/compostingToilet.png');
+
+}
+
+.earthBagWallTile {
+   background-image: url('../images/design-elements/earth_bag_wall.png');
+
+}
+
+.firePitTile{
+   background-image: url('../images/design-elements/firePit.png');
+
+}
+
+.foodStorageContainersTile{
+   background-image: url('../images/design-elements/foodStorageContainers.png');
+
+}
+
+.greenHouseTile{
+   background-image: url('../images/design-elements/greenHouse.png');
+
+}
+
+.gravelTile {
+   background-image: url('../images/design-elements/gravel.png');
+
+}
+
+.greenFlagTile{
+
+   background-image: url('../images/design-elements/green_flag.png');
+
+}
+
+.groundCoverTile {
+   background-image: url('../images/design-elements/ground_cover.png');
+  
+}
+
+.herbsTile {
+   background-image: url('../images/design-elements/herbs.png');
+
+}
+
+.honeyBeeHiveTile{
+   background-image: url('../images/design-elements/honeyBeeHive.png');
+
+}
+
+.medTentTile{
+   background-image: url('../images/design-elements/medTent.png');
+
+}
+
+.mulchTile {
+   background-image: url('../images/design-elements/mulch.png');
+}
+
+.livingBarbedWireTile{
+
+   background-image: url('../images/design-elements/living_barbed_wire.png');
+
+}
+
+.pipeHTile {
+   background-image: url('../images/design-elements/horizontal_pipe.png');
+
+}
+
+.pipeVTile {
+   background-image: url('../images/design-elements/vertical_pipe.png');
+
+}
+
+.pondSealantTile {
+   background-image: url('../images/design-elements/pond_sealant.png');
+
+}
+
+.poultryTile {
+   background-image: url('../images/design-elements/poultry.png');
+
+}
+
+.rootCropsTile {
+   background-image: url('../images/design-elements/root_crops.png');
+
+}
+
+.soilTile {
+   /* background-image: url('../images/design-elements/soil.png'); */
+   background-color: #000000;
+
+}
+ 
+.sheetMetalTile {
+   background-image: url('../images/design-elements/sheet_metal.png');
+
+}
+
+.shortTreeTile {   background-image: url('../images/design-elements/short_tree.png');
+
+}
+
+.shrubsTile {
+   background-image: url('../images/design-elements/shrubs.png');
+
+}
+
+.solarPanelsTile {
+   background-image: url('../images/design-elements/solar_panels.png');
+
+}
+
+.stoneTile {
+   background-image: url('../images/design-elements/stone.png');
+
+}
+ 
+.strawBaleTile {
+   background-image: url('../images/design-elements/straw_bale.png');
+
+}
+
+.swaleEWTile {
+   background-image: url('../images/design-elements/swaleH.png');
+
+}
+
+.swaleNSTile {
+   background-image: url('../images/design-elements/swaleV.png');
+
+}
+
+
+.tallTreeTile {
+   background-image: url('../images/design-elements/tall_tree.png');
+
+}
+
+.tanksTile {
+   background-image: url('../images/design-elements/tanks.png');
+
+}
+
+.vinesTile {
+   background-image: url('../images/design-elements/vines.png');
+
+}
+
+.wireFencingTile {
+   background-image: url('../images/design-elements/wire_fencing.png');
+
+}
+
+.woodCoreBermTile{
+   background-image: url('../images/design-elements/woodCoreBerm.png');
+
+}
+
+/* indicate current active grid unit */
+
+.currentGridUnit{
+   opacity: .5;
+   
+}
+
+
+/* Suppliers */
+
+.yellowWarningLoadLevel{
+
+   color: yellow;
+
+}
+
+.redWarningLoadLevel{
+
+   color: red;
+
+}
+
+
+.stallLane{
+   background-color:#585757;
+   color:white;
+   width:65%;
+   font-size: x-large;
+   font-weight: bolder;
+   border-color: black;
+   border-width: 1px;
+
+}
+
+.depotEntrance{
+
+   padding: 10px;
+   color:white;
+   width:65%;
+   font-size: x-large;
+   font-weight: bolder;
+
+
+}
+
+.toll{
+   opacity: .5;
+
+}
+
+.arrow{
+
+   font-size: x-large;
+}  
+
+
+
+.bambooHSupplier {
+   background: linear-gradient(#888626, #c7e710);
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+
+
+}
+  
+.bambooVSupplier {
+   background: linear-gradient(#a87d05, orange);
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+
+}
+
+.cardboardSupplier {
+   background: linear-gradient(#8d6c12, rgb(226, 167, 112));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+.compostSupplier {
+   background: linear-gradient(#80600a, rgb(148, 116, 78));   
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+
+  
+}
+
+.compostingToiletSupplier {
+   background: linear-gradient(#bea515, rgb(233, 230, 65));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+.earthBagWallSupplier {
+   background: linear-gradient(rgb(104, 84, 59),rgb(153, 124, 87));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+
+  
+
+}
+
+.firePitSupplier {
+   background: linear-gradient(rgb(180, 89, 14), rgb(253, 124, 19));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+.foodStorageContainersSupplier {
+   background: linear-gradient(rgb(77, 77, 77),rgb(126, 126, 126));
+   
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+.fuelSelector {
+   background: linear-gradient(rgb(151, 4, 4),rgb(236, 6, 6));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+.greenHouseSupplier {
+   background: linear-gradient(rgb(63, 119, 88),rgb(109, 207, 153));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+.gravelSupplier {
+   background: linear-gradient(rgb(70, 69, 69),rgb(105, 105, 105));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+
+  
+}
+
+.groundCoverSupplier {
+   background: linear-gradient(rgb(39, 117, 39),rgb(65, 194, 65));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+    
+}
+
+.herbsSupplier {
+   background: linear-gradient(rgba(37, 99, 40, 0.452),rgba(60, 158, 65, 0.452));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+.honeyBeeHiveSupplier {
+   background: linear-gradient(rgba(158, 156, 10, 0.452),rgba(236, 247, 82, 0.966));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+.livingBarbedWireSupplier {
+   background: linear-gradient(rgb(173, 24, 24),rgb(240, 33, 33));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+
+}
+
+.medTentSupplier {
+   background: linear-gradient(rgb(177, 1, 1),red);
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+   
+.mulchSupplier {
+   background: linear-gradient(rgb(95, 52, 11),rgb(173, 93, 18));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+
+  
+}
+
+.permitSupplier {
+   background: linear-gradient(rgb(102, 102, 102),rgb(168, 168, 168));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+
+  
+}
+
+.pipeHSupplier {
+   background: linear-gradient(rgb(56, 56, 56),rgb(143, 141, 141));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+
+  
+}
+
+
+.pipeVSupplier {
+   background: linear-gradient(rgb(56, 56, 56),rgb(143, 141, 141));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+.pondSealantSupplier {
+   background: linear-gradient(rgb(17, 90, 90),rgb(30, 161, 161));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+  
+.poultrySupplier {
+   background: linear-gradient(rgba(116, 114, 6, 0.897),rgba(214, 211, 10, 0.897));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+.rootCropsSupplier {
+   background: linear-gradient(rgba(129, 67, 9, 0.897),rgba(231, 119, 14, 0.897));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+
+}
+
+.sheetMetalSupplier {
+   background: linear-gradient(rgba(107, 106, 105, 0.897),rgba(107, 106, 105, 0.897));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+   
+.shortTreeSupplier {
+   background: linear-gradient(rgba(4, 46, 9, 0.897),rgba(9, 105, 22, 0.897));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+   
+.shrubsSupplier {
+   background: linear-gradient(rgba(36, 77, 41, 0.897),rgba(70, 150, 81, 0.897));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+}
+   
+.solarPanelsSupplier {
+   background: linear-gradient(rgb(82, 82, 82),rgb(158, 158, 158));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+
+}
+
+.stoneSupplier {
+   background: linear-gradient(rgba(68, 66, 66, 0.932),rgba(143, 139, 139, 0.932));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+.strawBaleSupplier {
+   background: linear-gradient(rgba(104, 107, 63, 0.932),rgba(192, 197, 116, 0.932));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+    
+}
+
+.swaleEWSupplier {
+   background: linear-gradient(rgb(12, 78, 109),rgb(18, 124, 173));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+.swaleNSSupplier {
+   background: linear-gradient(rgb(9, 67, 94),rgb(18, 124, 173));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+  
+.tallTreeSupplier {
+   background: linear-gradient(rgb(2, 65, 21),rgb(4, 119, 38));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+.tanksSupplier {
+   background: linear-gradient(rgb(10, 75, 105),rgb(18, 124, 173));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+.vinesSupplier {   
+   background: linear-gradient(rgb(5, 75, 46),rgb(10, 143, 87));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+.wireFencingSupplier {
+   background: linear-gradient(rgb(115, 116, 116),rgb(183, 184, 184));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+.woodCoreBermSupplier {
+   background: linear-gradient(rgba(146, 126, 12, 0.418),rgba(243, 212, 36, 0.418));
+   font-weight: bolder; 
+   text-align: center; 
+   font-size: small;
+   position: left;
+   width: 65%;
+   border: 2px solid;
+   border-color: rgb(43, 43, 43);
+  
+}
+
+
+
+/* vectors */
+
+.compass {
+   display: block;
+   background-image: url('../images/design-elements/compass.png');
+   background-repeat: no-repeat;
+   height:200px;
+   width:200px;
+   position: "";
+   left: "";
+   top: "";
+
+   }
+
+
+.cloud {
+   display: block;
+   background-image: url('../images/design-elements/cloud.gif');
+   background-repeat: no-repeat;
+   height:55px;
+   width:110px;
+   position: "";
+   left: "";
+   top: "";
+
+   }
+
+.cloud1 {
+   display: block;
+   background-image: url('../images/design-elements/cloud.gif');
+   background-repeat: no-repeat;
+   height:55px;
+   width:110px;
+   position: "";
+   left: "";
+   top: "";
+  
+   }
+
+   .cloud2 {
+      display: block;
+      background-image: url('../images/design-elements/cloud.gif');
+      background-repeat: no-repeat;
+      height:55px;
+      width:110px;
+      position: "";
+      left: "";
+      top: "";
+     
+      }
+
+      .cloud3 {
+         display: block;
+         background-image: url('../images/design-elements/cloud.gif');
+         background-repeat: no-repeat;
+         height:55px;
+         width:110px;
+         position: "";
+         left: "";
+         top: "";
+        
+         }
+
+
+.droneFly {
+   display: none;
+   height:"";
+   width:"";
+   position: "";
+   left: "";
+   top: "";
+
+   }
+
+.droneOnTarget {
+   background-image: url('../images/design-elements/drone_on_target.gif');
+   background-repeat: no-repeat;
+   height:20px;
+   width:20px;
+
+}   
+
+.sun {
+   display: block;
+   background-image: url('../images/design-elements/sun.png');
+   background-repeat: no-repeat;
+   height:233px;
+   width:230px;
+   position: "";
+   left: "";
+   top: "";
+      
+}
+
+.thermo{
+
+   display: block; 
+   background-image: url('');
+   background-repeat: no-repeat;
+   height:230px;
+   width:140px;
+   position: "";
+   left: "";
+   top: "";
+
+}
+
+.thermo90{
+
+   background-image: url('../images/design-elements/thermo90.png');
+
+}
+
+.thermo70{
+
+    background-image: url('../images/design-elements/thermo70.png');
+
+}
+
+.thermo50{
+
+   background-image: url('../images/design-elements/thermo50.png');
+}
+
+.thermo30{
+
+   background-image: url('../images/design-elements/thermo30.png');
+
+}
+
+
+.wildlifeWalk {
+   display: none;
+   background-image: url('../images/design-elements/wildlife.gif');
+   background-repeat: no-repeat;
+   height:20px;
+   width:20px;
+   position: "";
+   left: "";
+   top: "";
+      
+}
+     
+.wildlifeOnTarget {
+   background-image: url('../images/design-elements/wildlife.gif');
+   background-repeat: no-repeat;
+   height:20px;
+   width:20px;
+      
+}   
+      
+      
+
+.zombieWalk {
+   display: none;
+   background-image: url('../images/design-elements/zombie_y.gif');
+   background-repeat: no-repeat;
+   height:20px;
+   width:20px;
+   position: "";
+   left: "";
+   top: "";
+
+   }
+
+.zombieOnTarget {
+   background-image: url('../images/design-elements/zombie_y.gif');
+   background-repeat: no-repeat;
+   height:20px;
+   width:20px;
+
+}   
+
+.zombieKill {
+   background-image: url('../images/design-elements/zombie_kill.png');
+   background-repeat: no-repeat;
+   height:20px;
+   width:20px;
+
+      }   
+
+.noTruck{
+   cursor: none; 
+          
+}
+
+.instructions{
+
+   display:none;
+   
+}
+
+.instructionsDisplay{
+
+   position: fixed;
+   right: 260px;
+   top: 300px;
+   display:block;
+   background-color: #242e04;
+   padding: 25px;
+   width: 600px;
+   height: 300px;
+   overflow-y: scroll;
+   border: 4px dashed;
+   border-color: #6e431a;
+   cursor: pointer;
+
+}
+
+.infoButtons{
+   padding: 8px;
+   background: linear-gradient(#295225,#4b9944);
+   color: #c0bebe;
+   font-weight: bolder;
+   font-size: small;
+   border-color: #dde0c99c;
+   border-width: 3px;
+   border-style: solid;
+   
+}
+
+.withered{
+   opacity: .5;
+   background-color: #6e431a;
+
+}
